@@ -21,6 +21,10 @@ class Stack {
 		array_pop($this->storage);
 		$this->size--;
 	}
+
+	public function size() {
+		echo $this->size;
+	}
 }
 
 $newStack = new Stack();
@@ -30,6 +34,8 @@ echo $newStack->size;
 $newStack->pop();
 
 echo $newStack->size;
+
+$newStack->size();
 
 
 ?>
